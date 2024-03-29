@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bold : #262019;
+    --primary : #3c5443;
+    --secondary : #ea478b;
+    --middle : #efc069;
+    --light : #f8efc6;
+}
+
+.header{
+    color: var(--secondary);
+    background-color: var(--light);
+    padding: 2rem;
+    /* margin-bottom: 3rem; */
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.header > h1 {
+    text-shadow: 2px 2px var(--primary);
+    letter-spacing: 30px;
+}
+
+.header > p {
+    text-align: center;
+}
+
+.header > img {
+    width: 500px;
+}
+
+.container{
+    border: 2px solid blue;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.container > h1 {
+    color: var(--primary);
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 30px;
+    text-shadow: 2px 2px var(--middle);
+}
+
+.container-sosmed-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.sosmed-card {
+    font-family: "Silkscreen", sans-serif;
+    background-color: var(--primary);
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+    color: var(--light);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+a {
+    background-color: var(--light);
+    color: var(--primary);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 0 0 5px var(--light);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: var(--middle);
+    color: var(--light);
+    box-shadow: 0 0 5px var(--middle);
+    width: 80%;
+    letter-spacing: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width : 476px) {
+    .container {
+        width: auto;
+    }
+
+    .container > h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 3px;
+
+    }
+
+    .container-sosmed-card {
+        align-items: center;
+        justify-content: center;
+    }
+    .sosmed-card{
+        width: 50%;
+        height: 60%;
+        font-size: 60%;
+    }
+}
+
+@media screen and (min-width : 477px) and (max-width : 810px) {
+    .container {
+        width: auto;
+    }
+
+    .container > h1 {
+        font-size: 3rem;
+        text-align: center;
+        letter-spacing: 3px;
+
+    }
+
+    .container-sosmed-card {
+        align-items: center;
+        justify-content: center;
+    }
+    .sosmed-card{
+        width: 30%;
+        height: 60%;
+        font-size: 80%;
+    }
+}
+
+
